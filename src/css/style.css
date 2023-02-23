@@ -1,7 +1,5 @@
 /* Global Styling */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 :root {
   --main-color: #81CCFF;
   --height-color: #A4D8FF;
@@ -12,10 +10,10 @@
 
 body {
   display: grid;
-  grid-template-rows: 100px 1fr 1fr 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 50px 1fr 1fr;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  gap: 20px;
+  gap: 30px;
   color: var(--text-main);
 }
 
@@ -102,40 +100,44 @@ nav {
 
 
 
-/* case study styling */
 
-#case-studies-container {
-  /*grid-row: 3/4;*/
+/* services styling */
+
+#services-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   font-size: 2rem;
 }
+#services-container p {
+  width: 60%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#services-container h2 {
+  margin: 0;
+}
 
-.case-study-cards {
+.services-cards {
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: 20px;
 }
 
-.case-study-card {
+.services-card {
   background-color: var(--main-color);
   height: 400px;
   width: 100%;
   border-radius: 10px;
 }
 
-
-
-
 /* social bar styling */
 
 #social-container {
-  margin-top: 40px;
-  /*grid-row: 4/5;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,33 +156,69 @@ nav {
 }
 
 
+/* case study styling */
 
-
-/* services styling */
-
-#services-container {
-  /*grid-row: 5/6;*/
+#case-studies-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   font-size: 2rem;
 }
+#case-studies-container p {
+  width: 60%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#case-studies-container h2 {
+  margin: 0;
+}
 
-.services-cards {
+.case-study-cards {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  justify-items: center;
   gap: 20px;
 }
 
-.services-card {
+.case-study-card {
   background-color: var(--main-color);
   height: 400px;
   width: 100%;
   border-radius: 10px;
 }
+
+
+
+/*Instagram module styling*/
+
+
+#instagram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+#instagram-container p {
+  width: 60%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#instagram-container h2 {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
 
 
 

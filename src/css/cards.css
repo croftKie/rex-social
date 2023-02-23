@@ -52,11 +52,11 @@
 }
 
 .container::before {
-    transform: translateX(-155%);
+    transform: skew(45deg) translateX(-55%);
 }
 
 .container::after {
-    transform: translateX(155%);
+    transform: skew(45deg) translateX(55%);
 }
 
 .container img {
@@ -71,8 +71,8 @@
     left: 50%;
     position: absolute;
     z-index: 2;
-    transform: translate(-50%,-50%) scale(0.5);
-    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
 
 .container a {
@@ -86,17 +86,4 @@
 
 .container:hover img {
     opacity: 0.5;
-}
-
-.container:hover::before {
-    transform: skew(45deg) translateX(-55%);
-}
-
-.container:hover::after {
-    transform: skew(45deg) translateX(55%);
-}
-
-.container:hover figcaption {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
 }
