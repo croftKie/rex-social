@@ -1,0 +1,188 @@
+/* Global Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --main-color: #81CCFF;
+  --height-color: #A4D8FF;
+  --text-main: #545454;
+  --text-alt: #F3F3F3;
+  --highlight-color: #FF6392;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 100px 1fr 1fr;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  gap: 20px;
+  color: var(--text-main);
+}
+
+
+
+
+/* Nav Bar Styling */
+nav {
+  height: 100%;
+  /*grid-row: 1/2;*/
+  display: flex;
+  justify-content: center;
+}
+
+#all-nav-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+#page-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+#page-buttons button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  transition: color 0.25s;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-main);
+}
+
+#page-buttons button:hover {
+  color: #A4D8FF;
+  cursor: pointer;
+}
+
+
+/* Hero Styling */
+
+#hero-container {
+  /*grid-row: 2/3;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.hero-image {
+  background-color: #81CCFF;
+  height: 500px;
+}
+
+#image-one {
+  background: url('../assets/insta.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+#image-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-two img {
+  height: 75%;
+  border-radius: 10px;
+  transition: all 0.25s;
+}
+
+#image-two img:hover {
+  transform: scale(105%);
+}
+
+#image-three {
+  background: url('../assets/copywriting.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* case study styling */
+
+#case-studies-container {
+  /*grid-row: 3/4;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.case-study-cards {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.case-study-card {
+  background-color: var(--main-color);
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+/* social bar styling */
+
+#social-container {
+  margin-top: 40px;
+  /*grid-row: 4/5;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--highlight-color);
+}
+
+#social-container h3 {
+  font-size: 1.7rem;
+  color: var(--text-alt);
+}
+
+#social-container img {
+  height: 35px;
+  filter: invert(100%);
+}
+
+
+
+
+/* services styling */
+
+#services-container {
+  /*grid-row: 5/6;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.services-cards {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-card {
+  background-color: var(--main-color);
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+

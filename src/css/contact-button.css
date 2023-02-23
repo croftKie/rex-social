@@ -1,0 +1,43 @@
+/*Get in Touch Button*/
+#contact-button {
+    font-family: Avenir;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+
+#contact-button::before, #contact-button::after {
+    transition: all  0.25s;
+    border-style: solid;
+    border-width: 1.5px;
+    content: "";
+    position: absolute;
+    width: 25px;
+}
+
+#contact-button::before {
+    left: 0;
+    top: -6px;
+}
+
+#contact-button::after {
+    right: 0;
+    bottom: -6px;
+}
+
+#contact-button:hover::before, #contact-button:hover::after{
+    width: 48%;
+}
+
+#contact-button:active::before, #contact-button:active::after{
+    width: 98%;
+    border-color: var(--main-color);
+}
